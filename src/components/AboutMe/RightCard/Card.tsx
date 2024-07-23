@@ -1,21 +1,28 @@
 import { NeonGradientCard } from '@/components/magicui/neon-gradient-card'
 import { PiMedalMilitaryBold } from "react-icons/pi"
-type Props = {}
+
+type Props = {};
 
 export default function Card({}: Props) {
-	return (
-		<div>
-			<NeonGradientCard className="max-w-sm items-center justify-center text-center h-[180px]">
-      <span className='text-black text-xl'>
-				<div className='flex flex-col text-center'>
-					<div className='flex justify-center'>
-        	<PiMedalMilitaryBold/>
-					</div>
-					<p className='text-2xl font-bold'>Experience</p>
-					<p className='pt-2'>1+ year <br/>React Development</p>
-				</div>
-      </span>
-    </NeonGradientCard>
-		</div>
-	)
+  return (
+    <div className="flex items-center justify-center">
+      <NeonGradientCard 
+        className="relative max-w-sm w-full h-[180px] transition-transform duration-300 ease-in-out hover:scale-105"
+      >
+        <span className='text-black text-xl'>
+          <div className='flex flex-col text-center'>
+            <div className='flex justify-center'>
+              <PiMedalMilitaryBold className="transition-transform duration-300 ease-in-out hover:scale-110" />
+            </div>
+            <p className='text-2xl font-bold transition-transform duration-300 ease-in-out hover:scale-105'>
+              Experience
+            </p>
+            <p className='pt-2 transition-transform duration-300 ease-in-out hover:scale-105'>
+              1+ year <br /> React Development
+            </p>
+          </div>
+        </span>
+      </NeonGradientCard>
+    </div>
+  );
 }

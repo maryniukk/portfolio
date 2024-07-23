@@ -2,8 +2,6 @@ import Heading from '../ui/Heading'
 import Cards from './Cards'
 
 type Props = {
-	subTitle:string
-	Title:string
 }
 
 export default function AboutMe({}: Props) {

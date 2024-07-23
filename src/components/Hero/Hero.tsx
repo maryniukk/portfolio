@@ -1,6 +1,5 @@
 import LeftSide from './LeftSide'
 import RightSide from './RightSide'
-
 type Props = {}
 
 export default function Hero({}: Props) {

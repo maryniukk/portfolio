@@ -7,9 +7,9 @@ import {
   useEffect,
   useRef,
   useState,
-} from "react";
+} from "react"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 interface NeonColorsProps {
   firstColor: string;
@@ -74,7 +74,7 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
   borderRadius = 20,
   neonColors = {
     firstColor: "#ff00aa",
-    secondColor: "#00FFF1",
+    secondColor: "#4b006e",
   },
   ...props
 }) => {
@@ -148,4 +148,5 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
   );
 };
 
-export { NeonGradientCard };
+export { NeonGradientCard }
+

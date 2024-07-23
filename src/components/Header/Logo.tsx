@@ -6,8 +6,8 @@ export function Logo() {
     <Link href='/'>
     	<BlurFade delay={0.5} inView>
         <TypingAnimation 
-        className="font-bold text-4xl"
-        duration={400}
+        className="font-light text-4xl"
+        duration={600}
         text="MRNK."
         /> 
       </BlurFade>

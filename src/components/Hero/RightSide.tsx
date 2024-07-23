@@ -23,11 +23,11 @@ export default function RightSide  (props: Props){
 			<BlurFade delay={0.25} inView>
 				<div className='flex gap-3'>
 				<a href='https://github.com/maryniukk'>
-					<FaGithub className='text-3xl transition duration-300 ease-in-out hover:text-indigo-600'/></a>
+					<FaGithub className='text-3xl transition duration-300 ease-in-out hover:text-[#9400FF]'/></a>
 						<a href='https://www.linkedin.com/in/nikitamaryniuk/'>
-							<FaLinkedin className='text-3xl transition duration-300 ease-in-out hover:text-blue-600'/>
+							<FaLinkedin className='text-3xl transition duration-300 ease-in-out hover:text-[#0B66C2]'/>
 						</a>
-				<a href='https://t.me/maryniukk'><FaTelegramPlane className='text-3xl transition duration-300 ease-in-out hover:text-sky-400'/></a>
+				<a href='https://t.me/maryniukk'><FaTelegramPlane className='text-3xl transition duration-300 ease-in-out hover:text-[#24a1de]'/></a>
 				</div>
 				</BlurFade>
 			</div>
