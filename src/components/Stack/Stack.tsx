@@ -3,22 +3,28 @@ import { Circles } from './Circles'
 
 const stackList = [
 	{
-		title:'NextJs'
+		title:'NextJs',
+		href:'https://nextjs.org/'
 	},
 	{
-		title:'TailwindCSS'
+		title:'TailwindCSS',
+		href:'https://tailwindcss.com/'
 	},
 	{
-		title:'Redux Toolkit'
+		title:'Redux Toolkit',
+		href:'https://redux-toolkit.js.org/'
 	},
 	{
-		title:'JavaScript'
+		title:'JavaScript',
+		href:'https://www.javascript.com/'
 	},
 	{
-		title:'TypeScript'
+		title:'TypeScript',
+		href:'https://www.typescriptlang.org/'
 	},
 	{
-		title:'SASS'
+		title:'SASS',
+		href:'https://sass-lang.com/'
 	}
 
 ]
@@ -33,7 +39,9 @@ export default function Stack({}: Props) {
 				<Circles/>
 				<div className='pl-20 flex flex-col gap-4'>
 					{stackList.map((e)=> <ul>
-						<li className='text-4xl font-light'>{e.title}</li>
+						<li className='text-4xl font-light'>
+  						<a className='relative inline-block before:content-[""] before:absolute before:w-full before:h-0.5 before:bottom-0 before:left-0 before:bg-current before:scale-x-0 before:origin-bottom-left before:transition-transform before:duration-300 hover:before:scale-x-100' href={e.href}>{e.title}</a>
+						</li>
 					</ul>)}
 				</div>
 			</div>

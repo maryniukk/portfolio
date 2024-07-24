@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import type { Metadata } from "next"
 import { Manrope } from "next/font/google"
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${inter.className} text-white bg-[#161513]`}>
         <Header/>
         {children}
+        <Footer/>
         </body>
     </html>
   );
