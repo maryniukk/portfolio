@@ -1,5 +1,6 @@
 import AboutMe from '@/components/AboutMe/AboutMe'
 import Hero from '@/components/Hero/Hero'
+import MyProjects from '@/components/MyProjects/MyProjects'
 import Stack from '@/components/Stack/Stack'
 type Props = {
 	subTitle:string
@@ -11,6 +12,7 @@ export default function Home() {
      <Hero/>
      <AboutMe/>
      <Stack/>
+     <MyProjects/>
     </main>
   );
 }

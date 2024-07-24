@@ -13,8 +13,8 @@ export default function RightSide  (props: Props){
 			<div className='pt-2 flex justify-center gap-2'>
 			<BlurFade delay={0.25} inView>
 				<div className='flex gap-4'>
-					<a href='/src/assets/Nikita Maryniuk React Developer.docx' download className="btn text-lg bg-white text-black px-3 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#3e3e3e] hover:text-white">Download CV</a>
-					<a href='/src/assets/Nikita Maryniuk React Developer.docx' className="btn text-lg bg-white text-black px-3 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#3e3e3e] hover:text-white">Contact Info</a>
+					<a href='/src/assets/Nikita Maryniuk React Developer.docx' download className="btn text-lg bg-white text-black px-3 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#ff00aa] hover:text-white">Download CV</a>
+					<a href='/src/assets/Nikita Maryniuk React Developer.docx' className="btn text-lg bg-white text-black px-3 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#ff00aa] hover:text-white">Contact Info</a>
 					</div>
 				</BlurFade>
 			</div>

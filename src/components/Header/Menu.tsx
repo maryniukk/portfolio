@@ -25,7 +25,7 @@ export default function Menu({ navLinks }: Props) {
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link 
-                className={`text-[22px] font-light hover:text-underline text-whit ${pathname === link.href ? 'text-white font-bold hover:text-[#b73bf0] transition-all'  : ''}`} 
+                className={`text-[22px] font-light hover:text-underline text-whit ${pathname === link.href ? 'text-white font-bold hover:text-[#ff00aa] transition-all'  : ''}`} 
                 href={link.href}
               >
                 {link.label}
