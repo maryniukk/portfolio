@@ -1,12 +1,23 @@
 import { NeonGradientCard } from "@/components/magicui/neon-gradient-card"
 
-
-export async function Card({title}) {
+type Props = {
+  title:string
+}
+export async function Card({title}:Props) {
   return (
-    <NeonGradientCard className="max-w-sm items-center justify-center text-center">
-      <span className="mt-auto mb-auto pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#000000] from-35% to-[#d503ca] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-					{title}
-      </span>
-    </NeonGradientCard>
+    <NeonGradientCard 
+        className="relative max-w-sm w-full h-[180px] transition-transform duration-300 ease-in-out hover:scale-105"
+      >
+        <span className='text-black text-xl'>
+          <div className='flex flex-col text-center'>
+            <p className='text-2xl font-bold transition-transform duration-300 ease-in-out hover:scale-105'>
+              Your Project
+            </p>
+            <p className='pt-2 transition-transform duration-300 ease-in-out hover:scale-105'>
+              Info
+            </p>
+          </div>
+        </span>
+      </NeonGradientCard>
   );
 }

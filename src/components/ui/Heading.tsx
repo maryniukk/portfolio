@@ -4,6 +4,8 @@ type Props = {
 	Title:string
 }
 
+
+
 export default function Heading({subTitle, Title}: Props) {
 	return (
 		<div className='text-center pt-16'>

@@ -1,4 +1,5 @@
 import AboutMe from '@/components/AboutMe/AboutMe'
+import ContactMe from '@/components/ContactMe/ContactMe'
 import Hero from '@/components/Hero/Hero'
 import MyProjects from '@/components/MyProjects/MyProjects'
 import Stack from '@/components/Stack/Stack'
@@ -13,6 +14,7 @@ export default function Home() {
      <AboutMe/>
      <Stack/>
      <MyProjects/>
+     <ContactMe/>
     </main>
   );
 }

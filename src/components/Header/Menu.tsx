@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+
 export interface NavLink {
   href: string
   label: string
@@ -24,7 +25,7 @@ export default function Menu({ navLinks }: Props) {
         <ul className="flex gap-x-5 text-[14px]">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <Link 
+              <Link
                 className={`text-[22px] font-light hover:text-underline text-whit ${pathname === link.href ? 'text-white font-bold hover:text-[#ff00aa] transition-all'  : ''}`} 
                 href={link.href}
               >
