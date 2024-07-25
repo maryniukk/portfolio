@@ -1,10 +1,13 @@
+import { Logo } from '../Header/Logo'
+
 type Props ={
 
 }
 export default function Footer({}: Props) {
 	return (
 		<div className='pb-12'>
-			<p className='text-center text-lg'>Copyright © 2024 Nikita Maryniuk. All Rights Reserved.</p>
+			<Logo/>
+			<p className='text-center pt-4 text-lg'>Copyright © 2024 Nikita Maryniuk. All Rights Reserved.</p>
 		</div>
 	)
 }
