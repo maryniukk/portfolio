@@ -14,7 +14,8 @@ export default function LeftCard({}: Props) {
           <Image 
             className='rounded-lg transition-transform duration-300 ease-in-out hover:scale-110' 
             src={image} 
-            alt='' 
+            alt=''
+
           />
         </span>
       </NeonGradientCard>
