@@ -33,11 +33,11 @@ type Props = {}
 
 export default function Stack({}: Props) {
 	return (
-		<div>
+		<section className='min-h-screen flex flex-col justify-center' id='stack'>
 			<Heading subTitle='stack' Title='My technologies' />
 			<div className='pt-[80px] flex justify-center'>
 				<Circles/>
-				<div className='pl-20 flex flex-col gap-4'>
+				<div className='pl-20 flex flex-col gap-8 justify-center'>
 					{stackList.map((e)=> <ul>
 						<li className='text-4xl font-light'>
   						<a className='relative text-white hover:text-[#ff00aa] inline-block before:content-[""] before:absolute before:w-full before:h-0.5 before:bottom-0 before:left-0 before:bg-current before:scale-x-0 before:origin-bottom-left before:transition-transform before:duration-300 hover:before:scale-x-100' href={e.href}>{e.title}</a>
@@ -45,6 +45,6 @@ export default function Stack({}: Props) {
 					</ul>)}
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }

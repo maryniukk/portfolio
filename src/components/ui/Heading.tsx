@@ -8,7 +8,7 @@ type Props = {
 
 export default function Heading({subTitle, Title}: Props) {
 	return (
-		<div className='text-center pt-16'>
+		<div className='text-center'>
 			<p className='font-light text-2xl text-gray-400'>{subTitle}</p>
 			<h3 className='font-medium text-4xl'>{Title}</h3>
 		</div>

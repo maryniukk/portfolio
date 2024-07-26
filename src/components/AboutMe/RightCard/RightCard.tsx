@@ -1,6 +1,7 @@
 import Card from './Card'
-
-type Props = {}
+type Props = {
+	
+}
 
 export default function RightCard({}: Props) {
 	return (

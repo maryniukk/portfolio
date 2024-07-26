@@ -5,17 +5,17 @@ type Props = {
 	Title:string
 }
 
-export default function ContactMe({Title}: Props) {
+export default function ContactMe(Title:Props) {
 	return (
-		<div className='pt-12'>
+		<section id='contact' className='min-h-screen flex flex-col justify-center snap-center'>
 			<Heading Title='Contact Me'/>
 				<div className='pt-8 justify-around flex'>
 					<div className=' bg-[#1E1E1E] w-[900px] h-auto rounded-2xl'>
-						<div className='p-14'>
+						<div className='p-6'>
 							<MailForm/>
 						</div>
 					</div>
 				</div>
-		</div>
+		</section>
 	)
 }

@@ -1,7 +1,9 @@
 import { NeonGradientCard } from '@/components/magicui/neon-gradient-card'
 import { PiMedalMilitaryBold } from "react-icons/pi"
 
-type Props = {};
+type Props = {
+
+};
 
 export default function Card({}: Props) {
   return (

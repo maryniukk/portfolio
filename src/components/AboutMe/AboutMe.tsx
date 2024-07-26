@@ -6,9 +6,9 @@ type Props = {
 
 export default function AboutMe({}: Props) {
 	return (
-		<div>
+		<section  className='min-h-screen flex flex-col justify-center snap-center' id='about'>
 			<Heading subTitle='about me' Title='General Information'/>
 			<Cards/>
-		</div>
+		</section>
 	)
 }

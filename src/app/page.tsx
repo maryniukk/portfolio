@@ -10,14 +10,12 @@ type Props = {
 }
 export default function Home() {
   return (
-    <main className="flex text-5xl min-h-screen flex-col justify-between p-[140px] text-white">
-      <div>
-      <Hero/>
-      <AboutMe/>
-      <Stack/>
-      <MyProjects/>
-      <ContactMe/>
-     </div>
+    <main className="flex text-5xl min-h-screen flex-col justify-between text-white snap-mandatory snap-y">
+        <Hero/>
+        <AboutMe/>
+        <Stack/>
+        <MyProjects/>
+        <ContactMe/>
     </main>
   );
 }

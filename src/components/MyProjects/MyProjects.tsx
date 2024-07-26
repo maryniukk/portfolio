@@ -5,10 +5,10 @@ type Props = {}
 
 export default function MyProjects({}: Props) {
 	return (
-		<div>
+		<section id='projects' className='min-h-screen flex flex-col justify-center snap-center'>
 			<Heading subTitle='Browse My Recent' Title='Projects'/>
 			<ProjectCards/>
-		</div>
+		</section>
 
 	)
 }

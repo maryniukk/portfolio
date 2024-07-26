@@ -4,7 +4,7 @@ import TypingAnimation from '../magicui/typing-animation'
 
 export function Logo() {
   return (
-    <Link href='/'>
+    <Link href='#hero'>
       <BlurFade delay={0.5} inView>
         <div className="flex items-center justify-center h-full">
           <TypingAnimation 
