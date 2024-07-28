@@ -63,9 +63,10 @@ export default function Menu({ navLinks }: Props) {
 					className='fixed inset-0 bg-black bg-opacity-90 flex flex-col justify-center items-center z-40'
 				>
 					{navLinks.map((e, index) => (
-						<ul className='flex-col gap-y-5 text-center' key={index}>
+						<ul className='flex-col gap-y-5 text-center'>
 							<li>
 								<Link
+									key={index}
 									className='text-[22px] font-light hover:underline text-white'
 									href={e.href}
 									onClick={() => setIsClicked(false)}

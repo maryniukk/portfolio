@@ -6,7 +6,7 @@ type Props = {};
 export default function Card({}: Props) {
 	return (
 		<div className='flex items-center justify-center'>
-			<NeonGradientCard className='relative max-w-sm w-full h-[180px] transition-transform duration-300 ease-in-out hover:scale-105'>
+			<NeonGradientCard className=' relative  w-full h-[180px] transition-transform duration-300 ease-in-out hover:scale-105'>
 				<span className='text-black text-xl'>
 					<div className='flex flex-col text-center'>
 						<div className='flex justify-center'>
