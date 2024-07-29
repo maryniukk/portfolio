@@ -5,7 +5,7 @@ type Props = {};
 export default function Cards({}: Props) {
 	return (
 		<div>
-			<div className='pt-12 md:justify-around gap-4 flex justify-center flex-col md:flex-row '>
+			<div className='container justify-center flex flex-col md:flex pt-12'>
 				<LeftCard />
 				<RightCard />
 			</div>

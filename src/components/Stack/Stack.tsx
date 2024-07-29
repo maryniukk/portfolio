@@ -34,7 +34,7 @@ export default function Stack({}: Props) {
 	return (
 		<section className='min-h-screen flex flex-col justify-center' id='stack'>
 			<Heading subTitle='stack' Title='My technologies' />
-			<div className='pt-[80px] flex justify-center'>
+			<div className='pt-12 flex justify-center'>
 				<Circles />
 				<div className='pl-20 flex flex-col gap-8 justify-center'>
 					{stackList.map((e) => (
