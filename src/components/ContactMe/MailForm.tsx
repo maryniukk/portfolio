@@ -8,10 +8,10 @@ export default function MailForm({}: Props) {
 	const [result, setResult] = React.useState('');
 	const { toast } = useToast();
 
-	const onSubmit = async (event) => {
+	const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 		setResult('Sending...');
-		const formData = new FormData(event.target);
+		const formData = new FormData(event.currentTarget);
 
 		const response = await fetch('https://api.web3forms.com/submit', {
 			method: 'POST',
@@ -22,7 +22,7 @@ export default function MailForm({}: Props) {
 
 		if (data.success) {
 			setResult('Form Submitted Successfully');
-			event.target.reset();
+			event.currentTarget.reset();
 		} else {
 			console.log('Error', data);
 			setResult(data.message);
@@ -56,7 +56,7 @@ export default function MailForm({}: Props) {
 				onClick={() => {
 					toast({
 						title: 'Looking forward to meet you 😄',
-						description: '123123',
+						description: '',
 					});
 				}}
 				type='submit'
