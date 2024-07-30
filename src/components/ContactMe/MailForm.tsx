@@ -1,6 +1,7 @@
 'use client';
 import { useToast } from '@/components/ui/use-toast';
 import React from 'react';
+
 type Props = {};
 
 export default function MailForm({}: Props) {
@@ -29,10 +30,13 @@ export default function MailForm({}: Props) {
 	};
 
 	return (
-		<form onSubmit={onSubmit} className='flex flex-col gap-6'>
+		<form
+			onSubmit={onSubmit}
+			className='flex flex-col gap-6 items-center md:items-start'
+		>
 			<input
 				required
-				className='text-lg rounded-2xl py-[12px] px-[15px] bg-[#161513] text-white w-[350px]'
+				className='text-lg rounded-2xl py-[12px] px-[15px] bg-[#161513] text-white w-[300px] md:w-[350px]'
 				type='email'
 				name='email'
 				placeholder='Your Email'
@@ -46,7 +50,7 @@ export default function MailForm({}: Props) {
 				required
 				placeholder='Write your message here'
 				name='message'
-				className='w-[500px] h-[250px] text-white resize-none text-lg rounded-lg p-4 bg-[#161513] black:text-white'
+				className='w-full md:w-[500px] h-[150px] md:h-[250px] text-white resize-none text-lg rounded-lg p-4 bg-[#161513]'
 			></textarea>
 			<button
 				onClick={() => {
@@ -56,7 +60,7 @@ export default function MailForm({}: Props) {
 					});
 				}}
 				type='submit'
-				className='btn w-[100px] transition-all ease-in-out p-1 rounded-lg bg-white text-black text-lg font-normal hover:bg-[#ff00aa] hover:text-white'
+				className='btn w-[80px] md:w-[100px] transition-all ease-in-out p-1 rounded-lg bg-white text-black text-lg font-normal hover:bg-[#ff00aa] hover:text-white'
 			>
 				Send
 			</button>
