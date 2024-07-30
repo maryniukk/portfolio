@@ -64,7 +64,7 @@ export default function Menu({ navLinks }: Props) {
 					className='fixed inset-0 bg-black bg-opacity-90 flex flex-col justify-center items-center z-40'
 				>
 					{navLinks.map((e) => (
-						<ul className='flex-col gap-y-5 text-center'>
+						<ul key={e.id} className='flex-col gap-y-5 text-center'>
 							<li>
 								<Link
 									key={e.id}
