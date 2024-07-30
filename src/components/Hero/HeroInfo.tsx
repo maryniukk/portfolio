@@ -5,7 +5,7 @@ export async function HeroInfo() {
 	return (
 		<div className='flex flex-col'>
 			<div className='text-xl text-gray-400 md:text-gray-400 font-light md:text-3xl pb-3'>
-				Hello I'm
+				Hello I&apos;m
 			</div>
 			<WordPullUp
 				className='text-4xl font-bold tracking-[-0.02em] text-white 	dark:text-black md:text-6xl md:font-medium leading-[2.5rem] pb-3'

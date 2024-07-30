@@ -8,6 +8,7 @@ export interface NavLink {
 	href: string;
 	label: string;
 	index: string;
+	id: string;
 }
 
 export interface Props {
@@ -62,11 +63,11 @@ export default function Menu({ navLinks }: Props) {
 					exit={{ opacity: 0 }}
 					className='fixed inset-0 bg-black bg-opacity-90 flex flex-col justify-center items-center z-40'
 				>
-					{navLinks.map((e, index) => (
+					{navLinks.map((e) => (
 						<ul className='flex-col gap-y-5 text-center'>
 							<li>
 								<Link
-									key={index}
+									key={e.id}
 									className='text-[22px] font-light hover:underline text-white'
 									href={e.href}
 									onClick={() => setIsClicked(false)}
@@ -81,8 +82,8 @@ export default function Menu({ navLinks }: Props) {
 
 			<nav className='hidden md:block'>
 				<ul className='flex gap-x-5 text-[14px]'>
-					{navLinks.map((link, index) => (
-						<li key={link.index}>
+					{navLinks.map((link) => (
+						<li key={link.id}>
 							<Link
 								className={`text-[22px] font-light hover:underline ${
 									pathname === link.href
