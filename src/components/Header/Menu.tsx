@@ -7,7 +7,7 @@ import { useState } from 'react';
 export interface NavLink {
 	href: string;
 	label: string;
-	index: string;
+	index: number; // Изменено с string на number
 	id: string;
 }
 
@@ -29,8 +29,8 @@ export default function Menu({ navLinks }: Props) {
 				onClick={() => setIsClicked(!isClicked)}
 				className={`${
 					isClicked
-						? `relative  h-[25px] w-[35px] md:hidden transition-all ease-in-out cursor-pointer z-50`
-						: `relative  h-[25px] w-[35px] md:hidden transition-all ease-in-out cursor-pointer z-50`
+						? `relative h-[25px] w-[35px] md:hidden transition-all ease-in-out cursor-pointer z-50`
+						: `relative h-[25px] w-[35px] md:hidden transition-all ease-in-out cursor-pointer z-50`
 				}`}
 			>
 				<div
@@ -68,7 +68,7 @@ export default function Menu({ navLinks }: Props) {
 							<li>
 								<Link
 									key={e.id}
-									className='text-[22px] font-light hover:underline text-white'
+									className='text-[22px] font-light hover:text-[#ff00aa]'
 									href={e.href}
 									onClick={() => setIsClicked(false)}
 								>
@@ -85,7 +85,7 @@ export default function Menu({ navLinks }: Props) {
 					{navLinks.map((link) => (
 						<li key={link.id}>
 							<Link
-								className={`text-[22px] font-light hover:underline ${
+								className={`text-[22px] font-light hover:text-[#ff00aa] transition-all ease-in-out ${
 									pathname === link.href
 										? 'text-white font-bold hover:text-[#ff00aa] transition-all'
 										: 'text-white'

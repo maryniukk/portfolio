@@ -1,26 +1,31 @@
 import { Logo } from './Logo';
-import Menu from './Menu';
+import Menu, { NavLink } from './Menu';
+
 export default function Header() {
-	const navLinks = [
+	const navLinks: NavLink[] = [
 		{
 			href: '#about',
 			label: 'About',
 			id: '01',
+			index: 1,
 		},
 		{
 			href: '#stack',
 			label: 'Stack',
 			id: '02',
+			index: 2,
 		},
 		{
 			href: '#projects',
 			label: 'Projects',
 			id: '03',
+			index: 3,
 		},
 		{
 			href: '#contact',
 			label: 'Contact',
 			id: '04',
+			index: 4,
 		},
 	];
 

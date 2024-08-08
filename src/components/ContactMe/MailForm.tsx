@@ -1,11 +1,12 @@
 'use client';
 import { useToast } from '@/components/ui/use-toast';
-import React from 'react';
+import React, { useState } from 'react';
 
 type Props = {};
 
-export default function MailForm({}: Props) {
-	const [result, setResult] = React.useState('');
+const MailForm: React.FC<Props> = () => {
+	const [result, setResult] = useState('');
+	const [text, setText] = useState<string>('');
 	const { toast } = useToast();
 
 	const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -45,19 +46,26 @@ export default function MailForm({}: Props) {
 				type='hidden'
 				name='access_key'
 				value='319c0261-7682-4857-bf24-26bc739219b5'
-			></input>
+			/>
 			<textarea
+				onChange={(e) => setText(e.target.value)}
 				required
 				placeholder='Write your message here'
 				name='message'
 				className='w-full md:w-[500px] h-[150px] md:h-[250px] text-white resize-none text-lg rounded-lg p-4 bg-[#161513]'
 			></textarea>
+
 			<button
 				onClick={() => {
-					toast({
-						title: 'Looking forward to meet you 😄',
-						description: '',
-					});
+					text.length < 5
+						? toast({
+								title: 'Please, enter more details :)',
+								description: '',
+						  })
+						: toast({
+								title: 'Looking forward to meet you 😄',
+								description: '',
+						  });
 				}}
 				type='submit'
 				className='btn w-[80px] md:w-[100px] transition-all ease-in-out p-1 rounded-lg bg-white text-black text-lg font-normal hover:bg-[#ff00aa] hover:text-white'
@@ -67,4 +75,6 @@ export default function MailForm({}: Props) {
 			<span className='text-white text-xl'>{result}</span>
 		</form>
 	);
-}
+};
+
+export default MailForm;
