@@ -68,7 +68,7 @@ export default function Menu({ navLinks }: Props) {
 							<li>
 								<Link
 									key={e.id}
-									className='text-[22px] font-light hover:text-[#ff00aa]'
+									className='text-[22px] font-light hover:text-[#4b4b4b]'
 									href={e.href}
 									onClick={() => setIsClicked(false)}
 								>
@@ -85,9 +85,9 @@ export default function Menu({ navLinks }: Props) {
 					{navLinks.map((link) => (
 						<li key={link.id}>
 							<Link
-								className={`text-[22px] font-light hover:text-[#ff00aa] transition-all ease-in-out ${
+								className={`text-[22px] font-light hover:text-[#838383] transition-all ease-in-out ${
 									pathname === link.href
-										? 'text-white font-bold hover:text-[#ff00aa] transition-all'
+										? 'text-white font-bold hover:text-[#838383] transition-all'
 										: 'text-white'
 								}`}
 								href={link.href}

@@ -38,24 +38,27 @@ type Props = {};
 
 export default function Stack({}: Props) {
 	return (
-		<section className='min-h-screen flex flex-col justify-center' id='stack'>
+		<section
+			className='container flex flex-col justify-center pt-12 md:min-h-screen md:px-8'
+			id='stack'
+		>
 			<Heading subTitle='stack' Title='My technologies' />
-			<div className='pt-12 flex justify-center'>
+			<div className='flex justify-between pt-12'>
 				<Circles />
-				<div className='pl-20 flex flex-col gap-8 justify-center'>
-					{stackList.map((e) => (
-						<ul key={e.id}>
-							<li className='text-xl md:text-4xl font-light'>
-								<a
-									className='relative text-white hover:text-[#ff00aa] inline-block before:content-[""] before:absolute before:w-full before:h-0.5 before:bottom-0 before:left-0 before:bg-current before:scale-x-0 before:origin-bottom-left before:transition-transform before:duration-300 hover:before:scale-x-100 '
-									href={e.href}
-								>
-									{e.title}
-								</a>
-							</li>
-						</ul>
-					))}
-				</div>
+			</div>
+			<div className='flex flex-col  md:flex-row justify-center gap-8 pt-6'>
+				{stackList.map((e) => (
+					<ul key={e.id}>
+						<li className='text-md md:text-2xl font-light'>
+							<a
+								className='relative text-white hover:text-[#838383] before:content-[""] before:absolute before:w-full before:h-0.5 before:bottom-0 before:left-0 before:bg-current before:scale-x-0 before:origin-bottom-left before:transition-transform before:duration-300 hover:before:scale-x-100'
+								href={e.href}
+							>
+								{e.title}
+							</a>
+						</li>
+					</ul>
+				))}
 			</div>
 		</section>
 	);

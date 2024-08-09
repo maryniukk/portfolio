@@ -6,7 +6,11 @@ type Props = {};
 export default function LeftSide({}: Props) {
 	return (
 		<div>
-			<Image src={heroImg} alt='Profile Picture' width={380} height={520} />
+			<Image
+				className='w-[300px] h-[300px] md:w-[400px] md:h-[400px]'
+				src={heroImg}
+				alt='Profile Picture'
+			/>
 		</div>
 	);
 }

@@ -16,13 +16,13 @@ export default function RightSide(props: Props) {
 						<a
 							href='/src/assets/Nikita Maryniuk React Developer.docx'
 							download
-							className='btn text-lg font-normal bg-white text-black px-3 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#ff00aa] hover:text-white'
+							className='btn text-lg font-normal bg-white text-black px-3 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#4b4b4b] hover:text-white'
 						>
 							Download CV
 						</a>
 						<a
 							href='/src/assets/Nikita Maryniuk React Developer.docx'
-							className='btn text-lg font-normal bg-white text-black px-3 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#ff00aa] hover:text-white'
+							className='btn text-lg font-normal bg-white text-black px-3 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#4b4b4b] hover:text-white'
 						>
 							Contact Info
 						</a>
@@ -30,17 +30,17 @@ export default function RightSide(props: Props) {
 				</BlurFade>
 			</div>
 
-			<div className='flex justify-center gap-3 pt-2'>
+			<div className='flex justify-center gap-3'>
 				<BlurFade delay={0.25} inView>
 					<div className='flex gap-3'>
 						<a href='https://github.com/maryniukk'>
-							<FaGithub className='text-3xl transition duration-300 ease-in-out hover:text-[#9400FF]' />
+							<FaGithub className='text-4xl transition duration-300 ease-in-out hover:text-[#6A6AF0]' />
 						</a>
 						<a href='https://www.linkedin.com/in/nikitamaryniuk/'>
-							<FaLinkedin className='text-3xl transition duration-300 ease-in-out hover:text-[#0B66C2]' />
+							<FaLinkedin className='text-4xl transition duration-300 ease-in-out hover:text-[#0B66C2]' />
 						</a>
 						<a href='https://t.me/maryniukk'>
-							<FaTelegramPlane className='text-3xl transition duration-300 ease-in-out hover:text-[#24a1de]' />
+							<FaTelegramPlane className='text-4xl transition duration-300 ease-in-out hover:text-[#24A1DE]' />
 						</a>
 					</div>
 				</BlurFade>

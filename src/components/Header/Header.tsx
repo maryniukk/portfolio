@@ -30,7 +30,7 @@ export default function Header() {
 	];
 
 	return (
-		<header className='flex justify-between items-center py-3 px-24 bg-[#1E1E1E] sticky top-0 z-30 dark:bg-black'>
+		<header className='flex justify-between items-center rounded-md py-3 bg-[#161513] container sticky top-0 z-30 dark:bg-black'>
 			<Logo />
 			<Menu navLinks={navLinks} />
 		</header>
