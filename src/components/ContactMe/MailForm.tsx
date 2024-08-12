@@ -8,7 +8,6 @@ const MailForm: React.FC<Props> = () => {
 	const [result, setResult] = useState('');
 	const [text, setText] = useState<string>('');
 	const { toast } = useToast();
-
 	const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 		setResult('Sending...');
@@ -23,7 +22,7 @@ const MailForm: React.FC<Props> = () => {
 
 		if (data.success) {
 			setResult('Form Submitted Successfully');
-			event.currentTarget.reset();
+			event.currentTarget.reset(); // Reset the form inputs
 		} else {
 			console.log('Error', data);
 			setResult(data.message);

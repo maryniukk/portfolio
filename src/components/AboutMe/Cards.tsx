@@ -1,5 +1,5 @@
 import LeftCard from './LeftCard/LeftCard';
-import RightCard from './RightCard/RightCard';
+
 type Props = {};
 
 export default function Cards({}: Props) {
