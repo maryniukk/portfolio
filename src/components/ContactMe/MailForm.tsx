@@ -31,13 +31,10 @@ const MailForm: React.FC<Props> = () => {
 	};
 
 	return (
-		<form
-			onSubmit={onSubmit}
-			className='flex flex-col gap-6 items-center md:items-start'
-		>
+		<form onSubmit={onSubmit} className='flex flex-col gap-6 md:items-start'>
 			<input
 				required
-				className='text-lg rounded-2xl py-[12px] px-[15px] bg-[#161513] text-white w-[300px] md:w-[350px]'
+				className='text-lg rounded-2xl py-[12px] px-[15px] bg-[#161513] text-white w-[300px] md:w-[350px] placeholder:font-light'
 				type='email'
 				name='email'
 				placeholder='Your Email'
@@ -52,7 +49,7 @@ const MailForm: React.FC<Props> = () => {
 				required
 				placeholder='Write your message here'
 				name='message'
-				className='w-full md:w-[500px] h-[150px] md:h-[250px] text-white resize-none text-lg rounded-lg p-4 bg-[#161513]'
+				className='w-full md:w-[500px] h-[150px] md:h-[250px] text-white resize-none text-lg rounded-lg p-4 bg-[#161513] placeholder:font-light'
 			></textarea>
 
 			<button
@@ -68,7 +65,7 @@ const MailForm: React.FC<Props> = () => {
 						  });
 				}}
 				type='submit'
-				className='btn w-[80px] md:w-[100px] transition-all ease-in-out p-1 rounded-lg bg-white text-black text-lg font-normal hover:bg-[#ff00aa] hover:text-white'
+				className='btn text-lg font-normal bg-white text-black px-6 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#4b4b4b] hover:text-white'
 			>
 				Send
 			</button>

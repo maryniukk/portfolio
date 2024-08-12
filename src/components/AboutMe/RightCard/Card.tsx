@@ -1,9 +1,15 @@
 import { NeonGradientCard } from '@/components/magicui/neon-gradient-card';
-import { PiMedalMilitaryBold } from 'react-icons/pi';
+import { FC, ReactNode } from 'react';
+type Props = {
+	NeonGradientCard: React.ComponentType<{
+		children: ReactNode;
+		className?: string;
+	}>;
+	PiMedalMilitaryBold: React.ComponentType<{ className?: string }>;
+	IoBookSharp: React.ComponentType<{ className?: string }>;
+};
 
-type Props = {};
-
-export default function Card({}: Props) {
+const Card: FC<Props> = ({ PiMedalMilitaryBold }) => {
 	return (
 		<div className='flex items-center justify-center'>
 			<NeonGradientCard className=' relative  w-full h-[180px] transition-transform duration-300 ease-in-out hover:scale-105'>
@@ -23,4 +29,5 @@ export default function Card({}: Props) {
 			</NeonGradientCard>
 		</div>
 	);
-}
+};
+export default Card;

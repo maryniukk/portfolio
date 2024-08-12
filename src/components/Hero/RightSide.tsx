@@ -9,19 +9,18 @@ export default function RightSide(props: Props) {
 			<BlurFade delay={0.25} inView>
 				<HeroInfo />
 			</BlurFade>
-
 			<div className='pt-2 flex justify-center gap-2'>
 				<BlurFade delay={0.25} inView>
 					<div className='flex gap-4'>
 						<a
-							href='/src/assets/Nikita Maryniuk React Developer.docx'
+							href='https://drive.google.com/uc?export=download&id=1qtfRbyTs1FvGZ935N5HoVQi3E0hQJ_HM'
 							download
 							className='btn text-lg font-normal bg-white text-black px-3 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#4b4b4b] hover:text-white'
 						>
 							Download CV
 						</a>
 						<a
-							href='/src/assets/Nikita Maryniuk React Developer.docx'
+							href='https://drive.google.com/uc?export=download&id=1qtfRbyTs1FvGZ935N5HoVQi3E0hQJ_HM'
 							className='btn text-lg font-normal bg-white text-black px-3 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#4b4b4b] hover:text-white'
 						>
 							Contact Info

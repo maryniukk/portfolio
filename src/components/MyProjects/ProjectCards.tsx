@@ -20,7 +20,7 @@ const projectsArray = [
 
 const ProjectCards: React.FC<Props> = ({ title }) => {
 	return (
-		<div className='ml-auto mr-auto grid justify-center pt-12'>
+		<div className='ml-auto mr-auto grid justify-center pt-12 pr-4 pl-4'>
 			<div className='grid grid-cols-2 grid-rows-2 gap-12'>
 				<Card title={title} />
 				<Card title={title} />

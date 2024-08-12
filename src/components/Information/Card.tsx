@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { NeonGradientCard } from '../magicui/neon-gradient-card';
 import CardInfo from './CardInfo';
 
-const Card: React.FC = () => {
+const InfoCard: React.FC = () => {
 	return (
 		<section className='pt-12 flex flex-col md:flex-row mx-auto gap-6 md:gap-[100px]'>
 			<div className='flex items-center justify-center mx-auto'>
@@ -37,4 +37,4 @@ const Card: React.FC = () => {
 	);
 };
 
-export default Card;
+export default InfoCard;
