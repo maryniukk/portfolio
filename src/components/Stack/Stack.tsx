@@ -49,7 +49,7 @@ export default function Stack({}: Props) {
 			<div className='flex flex-col  md:flex-row justify-center gap-8 pt-6'>
 				{stackList.map((e) => (
 					<ul key={e.id}>
-						<li className='text-md md:text-2xl font-light'>
+						<li className='text-2xl md:text-xl font-light'>
 							<a
 								className='relative text-white hover:text-[#838383] before:content-[""] before:absolute before:w-full before:h-0.5 before:bottom-0 before:left-0 before:bg-current before:scale-x-0 before:origin-bottom-left before:transition-transform before:duration-300 hover:before:scale-x-100'
 								href={e.href}

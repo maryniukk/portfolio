@@ -33,7 +33,7 @@ const MailForm: React.FC<Props> = () => {
 		<form onSubmit={onSubmit} className='flex flex-col gap-6 md:items-start'>
 			<input
 				required
-				className='text-lg rounded-2xl py-[12px] px-[15px] bg-[#161513] text-white w-[300px] md:w-[350px] placeholder:font-light'
+				className='text-sm rounded-2xl py-[12px] px-[15px] bg-[#161513] text-white w-[300px] md:w-[350px] placeholder:font-light'
 				type='email'
 				name='email'
 				placeholder='Your Email'
@@ -48,7 +48,7 @@ const MailForm: React.FC<Props> = () => {
 				required
 				placeholder='Write your message here'
 				name='message'
-				className='w-full md:w-[500px] h-[150px] md:h-[250px] text-white resize-none text-lg rounded-lg p-4 bg-[#161513] placeholder:font-light'
+				className='w-full md:w-[500px] h-[150px] md:h-[250px] text-white text-sm resize-none rounded-lg p-4 bg-[#161513] placeholder:font-light'
 			></textarea>
 
 			<button
