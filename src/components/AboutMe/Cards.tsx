@@ -7,7 +7,6 @@ export default function Cards({}: Props) {
 		<div>
 			<div className='container justify-center flex flex-col md:flex pt-12'>
 				<LeftCard />
-				<RightCard />
 			</div>
 		</div>
 	);
